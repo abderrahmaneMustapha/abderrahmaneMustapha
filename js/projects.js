@@ -5,7 +5,7 @@ addProjects = ()=>{
         'title' : 'Learno',   
         'description' : 'this is my first django project, i learned alot from this i tried so much technologies'+
                         'like redis postegres and celery , ajax , websocket , responsive design',
-        'image' : 'img/learno.png'
+        'image' : 'img/learno.jpg'
     },
     {
         'title' : 'DNA',   
@@ -36,21 +36,21 @@ addProjects = ()=>{
         'description' : 'contain the cryptols challenge solutions its about cryptography i used python to slove 6 challnges '+
                         'and i will work on java solutions and continue to solve other challnges soon',
                        
-        'image' : 'img/cryptopals.png'            
+        'image' : 'img/cryptopals.jpg'            
     } ,
 
     {
         'title' : 'About malcomX',   
         'description' : 'Its about malcom X life  this is one of my freecodecamp projects ',
                        
-        'image' : 'img/malcom.png'            
+        'image' : 'img/malcom.jpg'            
     } ,
 
     {
         'title' : 'Python Course',   
         'description' : 'a simple python course one of my freecodecamp projects ',
                        
-        'image' : 'img/course.png'            
+        'image' : 'img/course.jpg'            
     } ,
 
    
@@ -59,27 +59,27 @@ addProjects = ()=>{
         'title' : 'Pomodoro clock',   
         'description' : 'a simple pmodoro clock one of my freecodecamp projects ',
                        
-        'image' : 'img/pomodoro.png'            
+        'image' : 'img/pomodoro.jpg'            
     } ,
 
     {
         'title' : 'Assassins creed survey',   
         'description' : 'an assassins creed surevey template freecodecamp projects ',
                        
-        'image' : 'img/assassins.png'            
+        'image' : 'img/assassins.jpg'            
     } ,
 
     {
         'title' : 'Product landing',   
         'description' : 'product landing page template freecodecamp projects',
                        
-        'image' : 'img/product.png'            
+        'image' : 'img/product.jpg'            
     } 
 ] 
     
     projects_container = document.getElementById("projects")
     projects.forEach( e => {
-        console.log(projects_container)
+
         projects_container.innerHTML += 
         '<div class="col-md-4 mt-4">'+
             '<div class="card">'+            
