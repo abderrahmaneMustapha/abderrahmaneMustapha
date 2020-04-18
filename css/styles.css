@@ -10,7 +10,10 @@
 }
 
 #projects .card img{
-    width: 4rem;
-    height: 4rem;
+    width: 8rem;
+    height: 6rem;
 
+}
+#projects .card {
+    min-height: 20rem;
 }
