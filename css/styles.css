@@ -28,9 +28,47 @@
 
 .skills-contact ul li{
     margin: auto;
+    padding: 1em;
+    text-align: center;
 }
 
 li img {
  width: 5.5rem;
  height: 5.5rem;
 }
+
+.skills-contact ul li .fa-python{
+    color:#3775A9;
+}
+
+.skills-contact ul li .fa-java{
+    color: #4A8BC6;
+}
+
+.skills-contact ul li .fa-js-square{
+    color: #F5DE19;
+}
+
+.skills-contact ul li .fa-html5{
+    color: #E44D26;
+}
+
+.skills-contact ul li .fa-css3-alt{
+    color: #32A4D6;
+}
+
+
+.skills-contact ul li .fa-sass{
+    color: #DE9CBE;
+}
+
+.skills-contact ul li .fa-react{
+    color: #74D9F5;
+}
+
+
+
+
+
+
+

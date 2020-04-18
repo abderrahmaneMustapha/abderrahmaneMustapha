@@ -67,6 +67,13 @@ addProjects = ()=>{
         'description' : 'an assassins creed surevey template freecodecamp projects ',
                        
         'image' : 'img/assassins.png'            
+    } ,
+
+    {
+        'title' : 'Product landing',   
+        'description' : 'product landing page template freecodecamp projects',
+                       
+        'image' : 'img/product.png'            
     } 
 ] 
     
