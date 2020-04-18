@@ -66,6 +66,25 @@ li img {
     color: #74D9F5;
 }
 
+.skills-contact ul li .fa-github{
+    color: black;
+}
+
+.skills-contact ul li .fa-reddit{
+    color: #E44D26;
+}
+
+.skills-contact ul li .fa-free-code-camp{
+    color: green;
+}
+
+.skills-contact ul li .fa-hackerrank{
+    color: green;
+}
+
+.skills-contact ul li .fa-codepen{
+    color: black;
+}
 
 
 
