@@ -17,3 +17,20 @@
 #projects .card {
     min-height: 20rem;
 }
+
+/* list of the skills and social media accounts */
+.skills-contact ul{ 
+    list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+}
+
+.skills-contact ul li{
+    margin: auto;
+}
+
+li img {
+ width: 5.5rem;
+ height: 5.5rem;
+}
