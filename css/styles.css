@@ -86,6 +86,16 @@ li img {
     color: black;
 }
 
+.hide{
+    display: none;
+    height: 0px;
+}
+
+.show{
+    display: contents;
+}
+
+
 
 
 
