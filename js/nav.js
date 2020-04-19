@@ -10,11 +10,11 @@ Array.prototype.forEach.call(nav, element => {
             
             element.className="nav-link"  
            
-            content = document.getElementById(element.getAttribute('data-toggle')).style.visibility = "hidden"
+            content = document.getElementById(element.getAttribute('data-toggle')).className = "hide row"
       
     }) 
         element.className="nav-link active" 
-        content = document.getElementById(element.getAttribute('data-toggle')).style.visibility = "visible"
+        content = document.getElementById(element.getAttribute('data-toggle')).className = "show row"
         
     })
     

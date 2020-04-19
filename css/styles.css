@@ -87,12 +87,13 @@ li img {
 }
 
 .hide{
-    display: none;
-    height: 0px;
+    visibility: hidden;
+    height: 0rem;
+    
 }
 
 .show{
-    display: contents;
+    visibility: visible;
 }
 
 
