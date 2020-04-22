@@ -82,11 +82,11 @@ addProjects = ()=>{
 
         projects_container.innerHTML += 
         '<div class="col-md-4 mt-4">'+
-            '<div class="card">'+            
+            '<div class="card">'+          
+                '<img src='+e['image']+'>'+                    
                 '<h5 class="card-title text-center">'+e['title']+'</h5>'+
-                '<img src='+e['image']+'>'+
-                '<p class="card-text p-2">'+e['description'].substring(0,100)+'...</p>'+            
-                '<button class="btn btn-primary" type="button">Learn more</button>'+
+                '<p class="card-text p-2">'+e['description'].substring(0,50)+'...</p>'+            
+                '<button data-toggle="modal" data-target="#projectsModal" class="btn btn-primary" type="button">Learn more</button>'+            
             '</div>'+
        '</div>'
     })
