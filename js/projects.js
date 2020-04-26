@@ -64,7 +64,7 @@ addProjects = ()=>{
                         'what to do but it was fun at the same time ',
         'image' : 'img/learno.jpg',
         'link' : 'https://www.youtube.com/watch?v=KMwi-PZuSCA',
-        'repo': '#',
+        'repo': 'https://github.com/abderrahmaneMustapha/Learno',
         'tech' : ['python', 'redis','postgres', 'django', 'css3-alt', 'html5']
         
     },
@@ -75,7 +75,7 @@ addProjects = ()=>{
                         ' i used some machine learning to help me find some problems and some relations',
         'image' : 'https://raw.githubusercontent.com/abderrahmaneMustapha/DNA/master/screenshots/dashboard.gif',
         'link' : 'https://github.com/abderrahmaneMustapha/DNA',
-        'repo': '#',
+        'repo': 'https://github.com/abderrahmaneMustapha/DNA',
         'tech' : ['python', 'react', 'mySql', 'django', 'css3-alt', 'html5']           
     } ,
 
@@ -96,8 +96,8 @@ addProjects = ()=>{
                         'and search for the downloaded pictures using a pyton interface in this project i used kivy and python ',
                        
         'image' : 'https://raw.githubusercontent.com/abderrahmaneMustapha/python-pixabay-downloader/master/report/images%20and%20gif/ExecutionKivy.gif'            
-        ,'link' : '#',
-        'repo': '#',
+        ,'link' : 'https://github.com/abderrahmaneMustapha/python-pixabay-downloader',
+        'repo': 'https://github.com/abderrahmaneMustapha/python-pixabay-downloader',
         'tech' : ['python', 'Kivy']
     } ,
 
@@ -107,8 +107,8 @@ addProjects = ()=>{
                         'and i will work on java solutions and continue to solve other challnges soon',
                        
         'image' : 'img/cryptopals.jpg'            
-        ,'link' : '#',
-        'repo': '#',
+        ,'link' : 'https://github.com/abderrahmaneMustapha/the-cryptopals-solutions',
+        'repo': 'https://github.com/abderrahmaneMustapha/the-cryptopals-solutions',
         'tech' : ['python', 'java',]
     } ,
 
@@ -117,8 +117,8 @@ addProjects = ()=>{
         'description' : 'Its about malcom X life  this is one of my freecodecamp projects ',
                        
         'image' : 'img/malcom.jpg'            
-        ,'link' : '#',
-        'repo': '#',
+        ,'link' : 'https://codepen.io/AbderrahmaneMustapha/full/OYyBwx',
+        'repo': 'https://codepen.io/AbderrahmaneMustapha/pen/OYyBwx',
         'tech' : ['css3-alt', 'html5']
     } ,
 
@@ -127,8 +127,8 @@ addProjects = ()=>{
         'description' : 'a simple python course one of my freecodecamp projects ',
                        
         'image' : 'img/course.jpg'            
-        ,'link' : '#',
-        'repo': '#',
+        ,'link' : 'https://codepen.io/AbderrahmaneMustapha/full/xNrMmb',
+        'repo': 'https://codepen.io/AbderrahmaneMustapha/pen/xNrMmb',
         'tech' : [ 'css3-alt', 'html5']
     } ,
 
@@ -139,8 +139,8 @@ addProjects = ()=>{
         'description' : 'a simple pmodoro clock one of my freecodecamp projects ',
                        
         'image' : 'img/pomodoro.jpg'            
-        ,'link' : '#',
-        'repo': '#',
+        ,'link' : 'https://codepen.io/AbderrahmaneMustapha/full/rNBjXVo',
+        'repo': 'https://codepen.io/AbderrahmaneMustapha/pen/rNBjXVo',
         'tech' : ['react', 'css3-alt', 'html5']
     } ,
 
@@ -149,8 +149,8 @@ addProjects = ()=>{
         'description' : 'an assassins creed surevey template freecodecamp projects ',
                        
         'image' : 'img/assassins.jpg'            
-        ,'link' : '#',
-        'repo': '#',
+        ,'link' : 'https://codepen.io/AbderrahmaneMustapha/full/BejPvG',
+        'repo': 'https://codepen.io/AbderrahmaneMustapha/pen/BejPvG',
         'tech' : ['css3-alt', 'html5']
     } ,
 
@@ -159,8 +159,8 @@ addProjects = ()=>{
         'description' : 'product landing page template freecodecamp projects',
                        
         'image' : 'img/product.jpg'            
-        ,'link' : '#',
-        'repo': '#',
+        ,'link' : 'https://codepen.io/AbderrahmaneMustapha/full/ZNWVwL',
+        'repo': 'https://codepen.io/AbderrahmaneMustapha/pen/ZNWVwL',
         'tech' : [ 'css3-alt', 'html5']
     } 
 ] 
