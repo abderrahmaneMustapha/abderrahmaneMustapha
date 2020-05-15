@@ -1,3 +1,23 @@
+
+slugify  = (str)=> {
+    str = str.replace(/^\s+|\s+$/g, ''); // trim
+    str = str.toLowerCase();
+  
+    // remove accents, swap ñ for n, etc
+    var from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
+    var to   = "aaaaeeeeiiiioooouuuunc------";
+    for (var i=0, l=from.length ; i<l ; i++) {
+        str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+    }
+
+    str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+        .replace(/\s+/g, '-') // collapse whitespace and replace by -
+        .replace(/-+/g, '-'); // collapse dashes
+
+    return str;
+}
+
+
 addSkills = ()=>{
     let projects = [{
         'title' : 'python',   
@@ -56,11 +76,11 @@ addSkills = ()=>{
             '<div class="card">'+          
                 '<img id="main-img" src='+e['image']+'>'+                    
                 '<h5 class="card-title text-center ">'+e['title']+'</h5>'+
-                '<p class="card-text p-2">'+e['description'].substring(0,50)+'...</p>'+            
+                '<p class="card-text p-2  text-center">'+e['description'].substring(0,50)+'...</p>'+            
                 '<button data-toggle="modal" data-target="#projectsModal'+slugify(e['title'])+'" class="btn btn-primary" type="button">Learn more</button>'+         
             '</div>'+
             
-            '<div class="modal fade"  id="projectsModal'+e['title']+'" tabindex="" role="dialog" aria-labelledby="Modal'+e['title']+'" aria-hidden="true">'+
+            '<div class="modal fade"  id="projectsModal'+slugify(e['title'])+'" tabindex="" role="dialog" aria-labelledby="Modal'+e['title']+'" aria-hidden="true">'+
                 '<div class="modal-dialog  modal-lg" role="document">'+
                     '<div class="modal-content">'+
                         '<div class="modal-header text-center">'+

@@ -37,7 +37,6 @@ let displayTechno = (tech) =>{
 
     images.forEach(v=> { if ( e == v.name) exists=v['src'] })
 
-    console.log(exists)
      if (exists){
         
         result+=  " <img title="+e+" src="+exists+" />"
@@ -173,7 +172,7 @@ addProjects = ()=>{
             '<div class="card">'+          
                 '<img id="main-img" src='+e['image']+'>'+                    
                 '<h5 class="card-title text-center">'+e['title']+'</h5>'+
-                '<p class="card-text p-2">'+e['description'].substring(0,50)+'...</p>'+            
+                '<p class="card-text p-2 text-center">'+e['description'].substring(0,50)+'...</p>'+            
                 '<button data-toggle="modal" data-target="#projectsModal'+slugify(e['title'])+'" class="btn btn-primary" type="button">Learn more</button>'+         
                 '<div class="tech d-flex flex-row">'
                     +displayTechno(e['tech'])+

@@ -10,8 +10,11 @@ body, #main .card-body{
 
 
 /* side */
+#side{
+ border-right:solid 3px white;
+}
 #side .card{
-
+  background-color: #F7F7F7;
 }
 /* profile image */
 .card{
@@ -26,6 +29,7 @@ body, #main .card-body{
     width: 20rem;
     height: 20rem;
     margin:auto;
+    background-color: #F7F7F7;    
 }
 
 #projects #main-img{
@@ -78,6 +82,7 @@ body, #main .card-body{
     border-radius: 50%;
     background-color: white;
     
+    
 }
 #skills .card {
     min-height: 16rem;
@@ -86,7 +91,7 @@ body, #main .card-body{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     display: flex;
-    margin-top:8rem ;
+    margin-top:6rem ;
    align-items: center;
    
 }
@@ -101,14 +106,8 @@ body, #main .card-body{
     color: black;
 }
 /*modal */
-@media only screen and (max-width: 600px) {
-   #skills  .col-md-4{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-   }
-  }
+
+
 .modal-body img{
     width: 95%;
     margin: auto;
@@ -137,6 +136,29 @@ body, #main .card-body{
  width: 4.5rem;
  height: 4.5rem;
 }
+
+/* mobile design */
+
+@media only screen and (max-width: 600px) {
+    #skills .card, #projects .card{
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+     #projects .card #main-img{
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+    /* skills */
+    #skills  .col-md-4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+   }
+
+
 
 .fa-python{
     color:#3775A9;
