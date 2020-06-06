@@ -12,7 +12,7 @@ cssselect2==0.3.0
 dataclasses==0.6
 defusedxml==0.6.0
 dj-database-url==0.5.0
-Django==2.2.10
+Django==2.2.13
 django-crispy-forms==1.9.0
 django-heroku==0.3.1
 django-phonenumber-field==4.0.0
