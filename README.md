@@ -1,4 +1,4 @@
-﻿# abderrahmaneMustapha
+﻿# Hello there it's Toumi Mustapha Abderrahmane 😁
  
  
 ```python 
@@ -20,17 +20,17 @@ class AboutMe(DetailView):
   
   #get all my favourite  programming languages
   def get_fav_lang(self):
-      languages = ['python', 'javascript', 'java']
+      languages = ['python 🐍 ', 'javascript😺 ', 'java ☕']
       return languages
       
   #get all my favourite frameworks
   def get_fav_frameworks(self):
-    frameworks = ['django', 'react', 'bootstrap', 'django-rest-framework']
+    frameworks = ['django 🔫 ', 'react 🎯', 'bootstrap✨ ', 'django-rest-framework🧬 ']
     return frameworks
    
   #get the databases that i can use
   def get_databases
-  data_bases = ['postgres', 'mysql', 'mongodb']
+  data_bases = ['postgres🐘 ', 'mysql 👍', 'mongodb 🍃']
   returb data_bases
     
 
