@@ -10,6 +10,14 @@ class AboutMe(DetailView):
   education = "Software engineering"
   website = "abderrahmane-mustapha.codes"
   
+   #get social media links
+  def get_social_contact(self)
+    social_media_links = {
+      "twitter": "twitter.com/Abderrahmaneend"
+      "dev community" : "dev.to/abderrahmanemustapha"      
+    }    
+    return social_media_links 
+  
   #get all my favourite  programming languages
   def get_fav_lang(self):
       languages = ['python', 'javascript', 'java']
@@ -17,18 +25,15 @@ class AboutMe(DetailView):
       
   #get all my favourite frameworks
   def get_fav_frameworks(self):
-    frameworks = ['django', 'react', 'bootstrap']
+    frameworks = ['django', 'react', 'bootstrap', 'django-rest-framework']
     return frameworks
+   
+  #get the databases that i can use
+  def get_databases
+  data_bases = ['postgres', 'mysql', 'mongodb']
+  returb data_bases
     
-  #get social media links
-  def get_social_contact(self)
-    social_media_links = {
-      "twitter": "twitter.com/Abderrahmaneend"
-      "dev community" : "https://dev.to/abderrahmanemustapha"
-      
-    }
-    
-    return social_media_links 
+
   
   
   
