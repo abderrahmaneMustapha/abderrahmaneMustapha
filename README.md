@@ -29,9 +29,9 @@ class AboutMe(DetailView):
     return frameworks
    
   #get the databases that i can use
-  def get_databases
-  data_bases = ['postgres🐘 ', 'mysql 👍', 'mongodb 🍃']
-  returb data_bases
+  def get_databases(self)
+   data_bases = ['postgres🐘 ', 'mysql 👍', 'mongodb 🍃']
+   return data_bases
     
 
   
