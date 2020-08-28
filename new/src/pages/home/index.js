@@ -6,7 +6,21 @@ class Home extends React.Component{
     constructor(props){
         super(props)
         this.state ={
-            main_project_image : 'http://abderrahmane-mustapha.codes/img/learno.jpg'
+            main_project_image :  {
+                 src : 'http://abderrahmane-mustapha.codes/img/learno.jpg', 
+                alt: "learno image abderrahmane mustapha toumi potfolio"
+            }
+        }
+        this.handleImageClick = this.handleImageClick.bind()
+    }
+
+    handleImageClick = (event)=>{
+        let image = event.target
+        if(image.src){
+            this.setState({
+                main_project_image : {src: image.src,  alt:image.alt}
+            })
+            
         }
     }
     render(){
@@ -19,10 +33,15 @@ class Home extends React.Component{
                         <h5 className="f-c-g">passionate and ready to face challenges and solve problems</h5>
                     </div> 
                     <div className="col-md-7" >
-                        <img className="d-block p-5 w-100" src={this.state. main_project_image}  />
+                        <img 
+                        className="d-block p-5 w-100" 
+                        src={this.state.main_project_image.src} 
+                        alt={this.state. main_project_image.alt}
+
+                        />
                     </div>
                     <div className="col-12">
-                    <ProjectsList />
+                    <ProjectsList  handleImageClick={this.handleImageClick}/>
                     </div>
                 </div>
             </div>

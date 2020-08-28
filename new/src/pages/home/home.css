@@ -1,0 +1,9 @@
+#main-home  .col-md-7 {
+
+    max-height: 90%;
+}
+  
+
+#main-home  .col-md-7 .img{
+    max-height: 100%;
+}
