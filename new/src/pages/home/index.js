@@ -1,5 +1,6 @@
 import React from "react"
 import {ProjectsList} from "./projects/index"
+import NavBar from "./navbar/index"
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 class Home extends React.Component{
@@ -26,6 +27,7 @@ class Home extends React.Component{
     render(){
         return(
             <div className="bg-b-to-b">
+             <NavBar />
                 <div className="row" id="main-home">
                     <div className="col-md-5" >
                         <h5 className="f-c-g" >Hello there its Toumi Mustapha Abderrahmane</h5>

@@ -1,0 +1,12 @@
+#home-nav li a{
+    color: #B4833A;
+}
+
+
+#home-nav li a:hover{
+    color: #cca262;
+}
+
+#home-nav li.active a{
+    color: #df9d3b;
+}

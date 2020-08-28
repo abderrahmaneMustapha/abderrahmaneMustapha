@@ -1,5 +1,5 @@
 import React from "react"
-
+import "./navbar.css"
 
 class NavBar extends React.Component{
     constructor(props){
@@ -9,9 +9,21 @@ class NavBar extends React.Component{
 
     render(){
         return(
-            <nav >
-
+            <nav   id="home-nav" className="navbar navbar-expand-lg  navbar-transparent bg-transparent">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Home</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Profile</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Projects</a>
+                    </li>                    
+                </ul>
             </nav>
         )
     }
 }
+
+export default NavBar
