@@ -1,6 +1,15 @@
-#main-home  .col-md-7 {
+#main-home{
+    padding:1em;
+}
 
+#main-home header{
+    height: 70%;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+#main-home  .col-md-7 {
     max-height: 90%;
+    margin-bottom:3em;
 }
   
 

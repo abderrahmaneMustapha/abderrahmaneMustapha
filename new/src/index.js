@@ -5,9 +5,22 @@ import './index.css';
 import Home from './pages/home/index';
 import * as serviceWorker from './serviceWorker';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+  <Router>
+    <Switch>
+    <Route exact path="/">
+        <Home />
+    </Route>
+   
+    </Switch>
+  </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

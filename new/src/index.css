@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding:0;
+  max-width: 100vw;
 }
 
 code {
@@ -22,6 +24,9 @@ code {
   min-height: 100vh;
 
 }
+.w-30{
+  max-width: 30%;
+}
 
 /* font colors */
 .f-c-g{
@@ -29,4 +34,12 @@ code {
 }
 .f-c-gr-1{
   color: #ccc7be;
+}
+/* fonts size */
+.header-main-text-size{
+  font-size: xx-large;
+}
+
+.header-sec-text-size{
+  font-size: medium;
 }

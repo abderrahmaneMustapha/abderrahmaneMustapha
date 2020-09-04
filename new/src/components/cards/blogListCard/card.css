@@ -1,0 +1,20 @@
+.blog-side-list-item{
+    margin-top:1em;
+}
+.blog-side-list-item h6{
+    color: white;
+    font-size: 0.8em;
+    padding-left: 0.4em;
+}
+
+.blog-side-list-item .image-container{
+    max-width: 30%;
+    max-height: 50%;
+    
+}
+.blog-side-list-item .blog-list-card-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}

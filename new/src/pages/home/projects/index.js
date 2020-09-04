@@ -14,7 +14,7 @@ class ProjectsList extends React.Component{
     }
     render(){
         return(
-            <div id="home-projects-container" className="container-fluid py-5">
+            <div id="home-projects-container" className="container">
             <div className="row">
                
                     {
