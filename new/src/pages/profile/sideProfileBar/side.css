@@ -1,0 +1,30 @@
+#side-profile-bar{
+    display: block;
+    position: absolute;
+    bottom: auto;
+    top: -100px;
+}
+#side-profile-bar .main{
+    z-index: 0;
+    margin-top: 2em;
+    padding: 1em;
+    min-height: 90vh;
+    max-height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 60%;
+    border-top: none;
+    border-bottom: sandybrown solid 1px;
+    background : linear-gradient(50deg, #010A12 20%, #24314B 70%);
+}
+#side-profile-bar .main section{
+    margin-top: 40%;
+}
+
+
+#side-profile-bar .main .image-container{
+   position:absolute;
+   bottom: 1em;
+   top: auto;
+}

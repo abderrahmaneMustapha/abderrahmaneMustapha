@@ -19,6 +19,15 @@ code {
   background : linear-gradient(30deg, #010A12 20%, #24314B 70%);
   color:white;
 }
+.full-width-back-image{
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0.1;
+
+}
 /* width and heights */
 .min-h-100{
   min-height: 100vh;
@@ -43,3 +52,4 @@ code {
 .header-sec-text-size{
   font-size: medium;
 }
+

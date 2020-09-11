@@ -1,6 +1,6 @@
 import React from "react"
 import {ProjectsList} from "./projects/index"
-import NavBar from "./navbar/index"
+import NavBar from "../../components/navs/navbar/index"
 import SideNav from "../../components/navs/sidenav"
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
@@ -29,34 +29,26 @@ class Home extends React.Component{
     }
     render(){
         return(
-            <div className="bg-b-to-b min-h-100">
-                <div className="row">                   
-                    <div className="col-md-10">
-                    <NavBar />
-                        <div className="row" id="main-home">
-                            <header className="col-md-5"  >
-                                <h5 className="f-c-g header-sec-text-size" >Hello there its Toumi Mustapha Abderrahmane</h5>
-                                <h1 className="f-c-gr-1 header-main-text-size">I'm software engineering student and a full stack webdeveloper </h1>
-                                <h5 className="f-c-g header-sec-text-size">passionate and ready to face challenges and solve problems</h5>
-                            </header>
-                            <div className="col-md-7 col-sm-12" >
-                                <img 
-                                className="d-block w-100" 
-                                src={this.state.main_project_image.src} 
-                                alt={this.state. main_project_image.alt}
+            
+            <div className="row" id="main-home">
+                <header className="col-md-5"  >
+                    <h5 className="f-c-g header-sec-text-size" >Hello there its Toumi Mustapha Abderrahmane</h5>
+                    <h1 className="f-c-gr-1 header-main-text-size">I'm software engineering student and a full stack webdeveloper </h1>
+                    <h5 className="f-c-g header-sec-text-size">passionate and ready to face challenges and solve problems</h5>
+                </header>
+                <div className="col-md-7 col-sm-12" >
+                    <img 
+                    className="d-block w-100" 
+                    src={this.state.main_project_image.src} 
+                    alt={this.state. main_project_image.alt}
 
-                                />
-                            </div>
-                            <div className="col-12">
-                            <ProjectsList  handleImageClick={this.handleImageClick}/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-2">
-                        <SideNav />
-                    </div>
-                </div> 
+                    />
+                </div>
+                <div className="col-12">
+                <ProjectsList  handleImageClick={this.handleImageClick}/>
+                </div>
             </div>
+                
          
         )
     }

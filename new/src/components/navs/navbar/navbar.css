@@ -1,3 +1,7 @@
+
+#home-nav{
+    z-index: 1;
+}
 #home-nav li a{
     color: #B4833A;
 }

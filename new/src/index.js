@@ -2,7 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
+
 import Home from './pages/home/index';
+import Profile from "./pages/profile/index"
+import SideNav from "./components/navs/sidenav/index"
+import NavBar from "./components/navs/navbar/index"
+
 import * as serviceWorker from './serviceWorker';
 
 import {
@@ -12,16 +17,28 @@ import {
 } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-  <Router>
-    <Switch>
-    <Route exact path="/">
-        <Home />
-    </Route>
-   
-    </Switch>
-  </Router>
-  </React.StrictMode>,
+  <div className="bg-b-to-b min-h-100">
+    <div className="row">                   
+      <div className="col-md-10">
+        <NavBar />
+          <React.StrictMode>
+            <Router>
+              <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route> 
+                <Route>
+                  <Profile />
+                </Route>                     
+                </Switch>
+            </Router>
+          </React.StrictMode>
+        </div>
+        <div className="col-md-2">
+        <SideNav />
+      </div>
+    </div> 
+  </div>,
   document.getElementById('root')
 );
 

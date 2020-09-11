@@ -26,7 +26,7 @@ class SideNav extends React.Component{
         </header>
         <nav id="blogs-list-side-nav">
         <header className="mb-3">
-          <h6 className="h-75 mr-auto">Blog List</h6>
+          <h6 className="h-75 mr-auto">Articles List</h6>
         </header>
         <ul class="list-unstyled">
         
