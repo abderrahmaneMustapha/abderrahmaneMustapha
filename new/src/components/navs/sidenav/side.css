@@ -1,3 +1,10 @@
+#side-nav{
+    background :  #031d33;
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+    padding-left: 1em;
+}
 #side-nav #side-nav-header{
     border-bottom: solid 0.2em #A67A39;
 }

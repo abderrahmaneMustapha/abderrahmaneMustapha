@@ -1,0 +1,11 @@
+
+#main-profile-bar{
+    min-width: 100%;
+}
+#main-profile-bar ul{
+    list-style: none;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
