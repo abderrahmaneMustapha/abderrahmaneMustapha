@@ -1,3 +1,29 @@
 #profile-tab{
+    height: 70vh;
     min-height: 70vh;
+    max-height: 70vh;
+}
+#profile-tab .image-container{
+    max-height: 70%;
+    max-width: 100%;
+    height: 70%;
+}
+
+#profile-tab  img{
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+#profile-tab .rounded-circle{
+    border: 1px solid red;
+    height: 100%;
+    padding: 3em 1.8em 3em 1.8em;
+}
+
+#profile-tab div.d-felx{
+    min-height: 100%;
 }

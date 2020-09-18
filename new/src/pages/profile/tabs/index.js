@@ -2,43 +2,69 @@ import React from "react"
 import "./tabs.css"
 
 
-export class Dev extends React.Component{
-    render(){
-        return(
-            <div id="profile-tab">Dev</div>
-        )
-    }
+export function Dev(){
+  
+    return(
+        <div id="profile-tab" className="container-fluid">
+          
+            <div className="image-container">
+                <img  id="profile-tab-image" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="dev in the abderrahmane mustapha portfolio" />
+            </div>            
+            <div className="row justify-content-center">
+
+                <div className="col-3 ">
+                    <div className="rounded-circle text-center">                    
+                        <h5>Articles<br></br></h5>
+                        <span>6</span>
+                    </div>
+                </div>
+
+                <div className="col-3 mx-1">
+                    <div className="rounded-circle text-center">
+                        <h5>Views<br></br></h5>                   
+                        <span>4000</span>
+                    </div>
+                </div>               
+
+                <div className="col-3 ">
+                    <div className="rounded-circle text-center">                   
+                        <h5>Followers<br></br></h5>
+                        <span>250</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    )
+    
 }
 
-export class Github extends React.Component{
-    render(){
-        return(
-            <div id="profile-tab">Github</div>
-        )
-    }
+export function  Github (){
+
+    return(
+        <div id="profile-tab">Github</div>
+    )    
+
 }
 
-export class Twitter extends React.Component{
+export function Twitter (){
 
-    render(){
-        return(
-            <div id="profile-tab">Twitter</div>
-        )
-    }
+    return(
+        <div id="profile-tab">Twitter</div>
+    )
+    
 }
+export function Skills (){
 
-export class Skills extends React.Component{
-    render(){
-        return(
-            <div id="profile-tab">Skills</div>
-        )
-    }
+    return(
+        <div id="profile-tab">Skills</div>
+    )
+    
 }
-
-export class Achievements extends React.Component{
-    render(){
-        return(
-            <div id="profile-tab"> Achievements</div>
-        )
-    }
+export function Achievements (){
+   
+    return(
+        <div id="profile-tab"> Achievements</div>
+    )
+    
 }

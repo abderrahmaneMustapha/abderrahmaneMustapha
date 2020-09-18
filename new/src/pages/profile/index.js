@@ -16,9 +16,18 @@ class Profile extends React.Component{
                     <div className="col-md-4">
                     <SideProfileBar />
                     </div>
-                    <div className="col-md-8">                        
-                        <ProfileRouters />
-                        <MainProfileBar />
+                    <div className="col-md-8">  
+                        <div className="container-fluid">
+                            <div className="row">
+                                <div className="col-12">
+                                    <ProfileRouters />
+                                </div>                                
+                                <div className="col-12">
+                                    <MainProfileBar />
+                                </div>                            
+                            </div>
+                        </div>                      
+                        
                     </div>
                 </div>            
             </div>
