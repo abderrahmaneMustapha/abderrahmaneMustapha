@@ -1,7 +1,5 @@
 import React from "react"
 import {ProjectsList} from "./projects/index"
-import NavBar from "../../components/navs/navbar/index"
-import SideNav from "../../components/navs/sidenav"
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 import './home.css'
@@ -22,7 +20,7 @@ class Home extends React.Component{
         let image = event.target
         if(image.src){
             this.setState({
-                main_project_image : {src: image.src,  alt:image.alt}
+                main_project_image : {src:image.src,  alt:image.alt}
             })
             
         }
@@ -30,8 +28,10 @@ class Home extends React.Component{
     render(){
         return(
             <>
-            <img src={this.state.main_project_image.src} 
-                    alt={this.state. main_project_image.alt} className="full-width-back-image"></img>
+            <img
+            src={this.state.main_project_image.src} 
+            alt={this.state.main_project_image.alt} 
+            className="full-width-back-image"/>
             <div className="row" id="main-home">
                 <header className="col-md-5"  >
                     <h5 className="f-c-g header-sec-text-size" >Hello there its Toumi Mustapha Abderrahmane</h5>
@@ -42,7 +42,7 @@ class Home extends React.Component{
                     <img 
                     className="d-block w-100" 
                     src={this.state.main_project_image.src} 
-                    alt={this.state. main_project_image.alt}
+                    alt={this.state.main_project_image.alt}
 
                     />
                 </div>

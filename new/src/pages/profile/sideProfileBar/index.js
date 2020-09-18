@@ -16,7 +16,9 @@ class SideProfileBar extends React.Component{
                             <div className="image-container">
                                 <img 
                                 className="d-block w-75 mx-auto mt-auto rounded-circle"
-                                src="http://abderrahmane-mustapha.codes/img/me.jpg" /> 
+                                src="http://abderrahmane-mustapha.codes/img/me.jpg"
+                                alt=" Toumi abderrahmane in his portfolio XD"
+                                 /> 
                             </div>
                         </section>
 
