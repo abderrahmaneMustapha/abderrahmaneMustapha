@@ -9,11 +9,31 @@ import "./main.css"
         return(
             <div id="main-profile-bar">
                 <ul className="">
-                    <li className=""><Link to="profile?tab=twitter">twitter</Link></li>
-                    <li className=""><Link to="profile?tab=github">Github</Link></li>
-                    <li className=""><Link to="profile?tab=dev">Dev</Link></li>
-                    <li className=""><Link to="profile?tab=skills">Skills</Link></li>
-                    <li className=""><Link to="profile?tab=achievements">Achievements</Link></li>
+                    <li className="">
+                        <Link to={{pathname:"/profile/", search:"?tab=dev"}}>
+                            Dev
+                        </Link>
+                    </li>
+                    <li className="">
+                        <Link to={{pathname:"/profile/", search:"?tab=github"}}>
+                            Github
+                        </Link>
+                    </li>  
+                    <li className="">
+                        <Link  to={{pathname:"/profile/", search:"?tab=twitter"}}>
+                            Twitter
+                        </Link>
+                    </li>                                     
+                    <li className="">
+                        <Link  to={{pathname:"/profile/", search:"?tab=skills"}}>
+                            Skills
+                        </Link>
+                    </li>
+                    <li className="">
+                        <Link to={{pathname:"/profile", search:"?tab=achievements"}}>
+                            Achievements
+                        </Link>
+                    </li>
                 </ul>
             </div>
         )

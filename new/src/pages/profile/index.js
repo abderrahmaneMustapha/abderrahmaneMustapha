@@ -1,10 +1,8 @@
 import React from "react"
 import SideProfileBar from "./sideProfileBar/index"
 import MainProfileBar from "./mainProfilebar/index"
-import {Github,Twitter,Skills,Achievements,Dev} from "./tabs/index"
-import {
-Route,
-} from "react-router-dom";
+import ProfileRouters from "./router"
+
 
 class Profile extends React.Component{
  
@@ -18,22 +16,8 @@ class Profile extends React.Component{
                     <div className="col-md-4">
                     <SideProfileBar />
                     </div>
-                    <div className="col-md-8">
-                        <Route path="/profile?tab=twitter">
-                                <Twitter/>
-                        </Route>
-                        <Route path="/profile?tab=github">
-                                <Github/>
-                        </Route>
-                        <Route path="/profile?tab=dev">
-                                <Dev/>
-                        </Route>
-                        <Route path="/profile?tab=skills">
-                                <Skills/>
-                        </Route>
-                        <Route path="/profile?tab=achievements">
-                                <Achievements/>
-                        </Route>
+                    <div className="col-md-8">                        
+                        <ProfileRouters />
                         <MainProfileBar />
                     </div>
                 </div>            

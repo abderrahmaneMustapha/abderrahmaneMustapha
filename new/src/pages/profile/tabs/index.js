@@ -1,12 +1,11 @@
 import React from "react"
+import "./tabs.css"
 
 
-export class Twitter extends React.Component{
-
+export class Dev extends React.Component{
     render(){
-        console.log("im twitter")
         return(
-            <div>Twitter</div>
+            <div id="profile-tab">Dev</div>
         )
     }
 }
@@ -14,15 +13,16 @@ export class Twitter extends React.Component{
 export class Github extends React.Component{
     render(){
         return(
-            <div>Github</div>
+            <div id="profile-tab">Github</div>
         )
     }
 }
 
-export class Dev extends React.Component{
+export class Twitter extends React.Component{
+
     render(){
         return(
-            <div>Dev</div>
+            <div id="profile-tab">Twitter</div>
         )
     }
 }
@@ -30,7 +30,7 @@ export class Dev extends React.Component{
 export class Skills extends React.Component{
     render(){
         return(
-            <div>Skills</div>
+            <div id="profile-tab">Skills</div>
         )
     }
 }
@@ -38,7 +38,7 @@ export class Skills extends React.Component{
 export class Achievements extends React.Component{
     render(){
         return(
-            <div> Achievements</div>
+            <div id="profile-tab"> Achievements</div>
         )
     }
 }
