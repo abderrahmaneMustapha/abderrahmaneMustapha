@@ -6,30 +6,27 @@ export function Dev(){
   
     return(
         <div id="profile-tab" className="container-fluid">
-          
-            <div className="image-container">
-                <img  id="profile-tab-image" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="dev in the abderrahmane mustapha portfolio" />
-            </div>            
+            <h1 className="main-text">Dev</h1> 
             <div className="row justify-content-center">
 
                 <div className="col-3 ">
-                    <div className="rounded-circle text-center">                    
+                    <div className="text-center">                    
                         <h5>Articles<br></br></h5>
                         <span>6</span>
                     </div>
                 </div>
 
                 <div className="col-3 mx-1">
-                    <div className="rounded-circle text-center">
+                    <div className="text-center">
                         <h5>Views<br></br></h5>                   
-                        <span>4000</span>
+                        <span>5,089</span>
                     </div>
                 </div>               
 
                 <div className="col-3 ">
-                    <div className="rounded-circle text-center">                   
+                    <div className="text-center">                   
                         <h5>Followers<br></br></h5>
-                        <span>250</span>
+                        <span>202</span>
                     </div>
                 </div>
                 
@@ -42,7 +39,34 @@ export function Dev(){
 export function  Github (){
 
     return(
-        <div id="profile-tab">Github</div>
+        <div id="profile-tab" className="container-fluid">
+           
+             <h1 className="main-text">Github</h1>         
+            <div className="row justify-content-center">
+
+                <div className="col-3 ">
+                    <div className="text-center">                    
+                        <h5>Repo<br></br></h5>
+                        <span>27</span>
+                    </div>
+                </div>
+
+                <div className="col-3 mx-1">
+                    <div className="text-center">
+                        <h5>Followers<br></br></h5>                   
+                        <span>67</span>
+                    </div>
+                </div>               
+
+                <div className="col-3 ">
+                    <div className="text-center">                   
+                        <h5>Pull Requests<br></br></h5>
+                        <span>10</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     )    
 
 }
@@ -50,7 +74,34 @@ export function  Github (){
 export function Twitter (){
 
     return(
-        <div id="profile-tab">Twitter</div>
+        <div id="profile-tab" className="container-fluid">
+           
+        <h1 className="main-text">Twitter</h1>         
+       <div className="row justify-content-center">
+
+           <div className="col-3 ">
+               <div className="text-center">                    
+                   <h5>Posts<br></br></h5>
+                   <span>102</span>
+               </div>
+           </div>
+
+           <div className="col-3 mx-1">
+               <div className="text-center">
+                   <h5>Followers<br></br></h5>                   
+                   <span>320</span>
+               </div>
+           </div>               
+
+           <div className="col-3 ">
+               <div className="text-center">                   
+                   <h5>Pull Requests<br></br></h5>
+                   <span>10</span>
+               </div>
+           </div>
+           
+       </div>
+   </div>
     )
     
 }
