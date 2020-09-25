@@ -108,14 +108,29 @@ export function Twitter (){
 export function Skills (){
 
     return(
-        <div id="profile-tab">Skills</div>
+        <div id="profile-tab">
+            <div className="header-sec-text-size p-md-5 text-center">
+                <spna className="h1">A</spna> full stack web developer  who use <span className="h2"> Python </span>
+                and <span className="h2" > Javascript </span>
+                i like to use <span className="h2"> Django </span> or 
+                <span className="h2"> Nodejs </span> for the backend part ,  
+                and <span className="h2"> React </span> for the frontend part  
+                im also familiar with <span className="h2"> Agile </span> methodologys , and other
+                software engeneering fields
+                currently im involved in the development of <span className="h2"> Open source </span>
+                projects
+                in community lovers and dzcode 
+            </div>
+        </div>
     )
     
 }
 export function Achievements (){
    
     return(
-        <div id="profile-tab"> Achievements</div>
+        <div id="profile-tab"> 
+         Coming soon
+        </div>
     )
     
 }

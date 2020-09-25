@@ -7,6 +7,7 @@ import Home from './pages/home/index';
 import Profile from "./pages/profile/index"
 import SideNav from "./components/navs/sidenav/index"
 import NavBar from "./components/navs/navbar/index"
+import Project from "./pages/projects/index"
 
 import * as serviceWorker from './serviceWorker';
 
@@ -27,9 +28,10 @@ ReactDOM.render(
                 <Route exact path="/">
                   <Home />
                 </Route> 
-                <Route>
+                <Route  path="/profile">
                   <Profile />
-                </Route>                     
+                </Route>  
+                <Route exact path="/projects" component={Project} />                  
                 </Switch>
             </Router>
           </React.StrictMode>
