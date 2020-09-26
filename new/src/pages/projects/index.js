@@ -9,11 +9,14 @@ import ProjectCard from "../../components/cards/projectCard/index"
                 <div className="row">
                     <div className="col-md-4">
                         <nav>
-                            <header className="border-top border-bottom">
-                                            dazdazdazd
-                                            azdazdazdazd
-                                            dazdazd
+                            <header >
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
                             </header>
+
+                            <hr></hr>
                         </nav>
                     </div>
                     <div className="col-md-8">

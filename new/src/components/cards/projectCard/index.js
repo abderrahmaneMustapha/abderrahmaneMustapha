@@ -1,11 +1,10 @@
 import React from "react"
-
+import "./project.css"
  export default class ProjectCard extends React.Component{
-
 
     render(){
         return(
-            <div className="card mb-3 p-0">
+            <div  id="project-card" className="card mb-3 bg-transparent border-0">
 
                 <img 
                     src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" 
@@ -13,8 +12,11 @@ import React from "react"
                     class="img-thumbnail p-0"
                  />
 
-                <div className="card-body p-1">
-                    this project is for you
+                <div className=" text p-1">
+                    <header className="text-center font-weight-bold">Title</header>
+                    <div>
+                        python , java, django, js
+                    </div>
                 </div>
 
             </div>
