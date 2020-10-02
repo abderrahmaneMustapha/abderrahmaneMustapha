@@ -55,6 +55,11 @@ code {
 }
 
 
+/* widths */
+.w-80{
+  width: 80%;
+  max-width: 80%;
+}
 hr{
   color: #B4833A;
 }

@@ -7,8 +7,8 @@ import Home from './pages/home/index';
 import Profile from "./pages/profile/index"
 import SideNav from "./components/navs/sidenav/index"
 import NavBar from "./components/navs/navbar/index"
-import Project from "./pages/projects/index"
-
+import Projects from "./pages/projects/index"
+import Project from "./pages/projects/project/index"
 import * as serviceWorker from './serviceWorker';
 
 import {
@@ -28,10 +28,10 @@ ReactDOM.render(
                 <Route exact path="/">
                   <Home />
                 </Route> 
-                <Route  path="/profile">
-                  <Profile />
-                </Route>  
-                <Route exact path="/projects" component={Project} />                  
+                <Route  path="/profile"  component={Profile}/>
+                 
+                <Route exact path="/projects" component={Projects} />  
+                <Route  path="/project/:slug" component={Project} />                
                 </Switch>
             </Router>
           </React.StrictMode>

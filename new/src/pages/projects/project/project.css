@@ -1,0 +1,11 @@
+#project-page .desc-container{
+    position: relative;
+}
+#project-page .desc-main{
+    height: 50vh;
+    top: 40%;
+    position: fixed;
+    text-align: center;
+    width: 30vw;
+    bottom: auto;
+}

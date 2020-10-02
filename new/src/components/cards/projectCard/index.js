@@ -1,10 +1,22 @@
 import React from "react"
 import "./project.css"
+
  export default class ProjectCard extends React.Component{
+    constructor(props){
+        super(props)
+        this.state={
+            data :{slug: "title-project-1"}
+        }
+    }
 
     render(){
+       
         return(
-            <div  id="project-card" className="card mb-3 bg-transparent border-0">
+            <div  id="project-card" className="card mb-3 bg-transparent border-0" 
+            onClick={(event)=>{
+                this.props.handleGotoProject(this.state.data.slug)      
+            }                       
+            }>
 
                 <img 
                     src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" 
