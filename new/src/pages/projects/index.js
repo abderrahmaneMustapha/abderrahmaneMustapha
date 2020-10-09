@@ -2,6 +2,15 @@ import React from "react"
 import ProjectCard from "../../components/cards/projectCard/index"
 class Projects extends React.Component {
     
+    componentDidMount(){
+        fetch("https://api.jsonbin.io/b/5f80b2027243cd7e824d634a",{
+            method: 'GET',
+        })
+        .then(res => res.json())
+        .then(data=>{
+            console.log(data)
+        })
+    }
     handleGotoProject = (slug)=>{
         this.props.history.push(`/project/${slug}`)
     }
