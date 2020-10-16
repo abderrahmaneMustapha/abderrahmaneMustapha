@@ -23,7 +23,7 @@ export default class ProjectCard extends React.Component {
                 <img
                     src={data.main_image.src}
                     alt={data.main_image.alt}
-                    class="img-thumbnail p-0"
+                    className="img-thumbnail p-0"
                 />
 
                 <div className=" text p-1">

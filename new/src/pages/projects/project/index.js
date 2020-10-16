@@ -25,8 +25,8 @@ class Project extends React.Component {
                     <div className="col-md-7 col-sm-12">
                         <div className="image-container mx-auto w-80">
                             <img
-                                src={data.main_image}
-                                alt="project title in abderrahmane toumi portfolio page"
+                                src={data.main_image.src}
+                                alt={data.main_image.alt}
                                 className="d-block w-100"
                             />
                         </div>
