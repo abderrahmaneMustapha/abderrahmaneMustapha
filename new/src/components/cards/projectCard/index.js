@@ -1,38 +1,42 @@
-import React from "react"
-import "./project.css"
+import React from "react";
+import "./project.css";
 
- export default class ProjectCard extends React.Component{
-    constructor(props){
-        super(props)
-        this.state={
-            data :{slug: "title-project-1"}
-        }
+export default class ProjectCard extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: this.props.data,
+        };
     }
 
-    render(){
-       
-        return(
-            <div  id="project-card" className="card mb-3 bg-transparent border-0" 
-            onClick={(event)=>{
-                this.props.handleGotoProject(this.state.data.slug)      
-            }                       
-            }>
+    render() {
+        const data = this.state.data;
 
-                <img 
-                    src="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png" 
-                    alt="project in abderrahmane mustapha protofolio"
+        return (
+            <div
+                id="project-card"
+                className="card mb-3 bg-transparent border-0"
+                onClick={() => {
+                    this.props.onClick();
+                }}
+            >
+                <img
+                    src={data.main_image.src}
+                    alt={data.main_image.alt}
                     class="img-thumbnail p-0"
-                 />
+                />
 
                 <div className=" text p-1">
-                    <header className="text-center font-weight-bold">Title</header>
+                    <header className="text-center font-weight-bold">
+                        {data.short_name}
+                    </header>
                     <div>
-                        python , java, django, js
+                        {data.tags.map((element) => (
+                            <span className="mx-1">{element}</span>
+                        ))}
                     </div>
                 </div>
-
             </div>
-        )
+        );
     }
-
 }

@@ -1,30 +1,47 @@
-import React from "react"
-import ProjectCard from "../../components/cards/projectCard/index"
+import React from "react";
+import ProjectCard from "../../components/cards/projectCard/index";
 class Projects extends React.Component {
-    
-    componentDidMount(){
-        fetch("https://api.jsonbin.io/b/5f80b2027243cd7e824d634a",{
-            method: 'GET',
+    state = {
+        data: {},
+        loading: true,
+    };
+
+    componentDidMount() {
+        fetch("https://api.jsonbin.io/b/5f89e01165b18913fc5ff104/3", {
+            method: "GET",
         })
-        .then(res => res.json())
-        .then(data=>{
-            console.log(data)
-        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                this.setState({
+                    data: data,
+                    loading : false
+                });
+            });
     }
-    handleGotoProject = (slug)=>{
-        this.props.history.push(`/project/${slug}`)
-    }
+    handleGotoProject = (project) => {
+        this.props.history.push({pathname : `/project/${project.slug}`, state : { data : project}});
+    };
     render() {
-    
         return (
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-4">
                         <nav>
-                            <header >
+                            <header>
                                 <form class="form-inline">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                    <input
+                                        class="form-control mr-sm-2"
+                                        type="search"
+                                        placeholder="Search"
+                                        aria-label="Search"
+                                    />
+                                    <button
+                                        class="btn btn-outline-success my-2 my-sm-0"
+                                        type="submit"
+                                    >
+                                        Search
+                                    </button>
                                 </form>
                             </header>
 
@@ -33,21 +50,27 @@ class Projects extends React.Component {
                     </div>
                     <div className="col-md-8">
                         <div className="row justify-content-center">
-                            {
-                                [0, 0, 0, 0].map(
-                                    element => (
-                                        <div className="col-md-4">
-                                            <ProjectCard  handleGotoProject={this.handleGotoProject}  />
-                                        </div>
-                                    )
-                                )
-                            }
+                            {this.state.loading ? (
+                                <div>Loading ... </div>
+                            ) : (
+                                this.state.data.projects.map((element) => (
+                                    <div  className="col-md-4">
+                                        <ProjectCard
+                                            key={element.id}
+                                            data={element}
+                                            onClick={()=>{
+                                                this.handleGotoProject(element)
+                                            }}
+                                        />
+                                    </div>
+                                ))
+                            )}
                         </div>
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default Projects
+export default Projects;

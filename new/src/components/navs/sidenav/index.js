@@ -29,7 +29,7 @@ class SideNav extends React.Component{
         <header className="mb-3">
           <h6 className="h-75 mr-auto">Articles List</h6>
         </header>
-        <ul class="list-unstyled">
+        <ul className="list-unstyled">
         
         {list.map(element=>(
 
