@@ -31,8 +31,8 @@ class Project extends React.Component {
                             />
                         </div>
 
-                        <div className="text-container my-2">
-                            <p className="mt-5">{data.description}</p>
+                        <div className="text-container mt-5">
+                            <p className="my-2">{data.description}</p>
                         </div>
                     </div>
                 </div>

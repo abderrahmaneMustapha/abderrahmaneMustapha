@@ -9,3 +9,10 @@
     width: 30vw;
     bottom: auto;
 }
+#project-page .image-container{
+    height: auto;
+}
+
+#project-page .image-container img{
+    height: auto;
+}
