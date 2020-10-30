@@ -17,7 +17,7 @@ class SideNav extends React.Component{
               <div className="col-md-4">
               <img 
                   className="d-block w-100 rounded-circle"
-                  src="http://abderrahmane-mustapha.codes/img/me.jpg"
+                  src="https://ik.imagekit.io/ykyl2djdvw/23f8c228-9596-4b80-9a13-c0f0f22a9652_JZl9Fz0tSB-v.jpg"
                   alt= "toumi abderrahmane in his portfolio profile" 
               /> 
               </div>
