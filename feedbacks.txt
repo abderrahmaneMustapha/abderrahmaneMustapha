@@ -1,8 +1,0 @@
-1) there is a large amount of white space at the bottom of your portfolio
-2)it is recommended to make your email clickable
-3)it is also better you use SSL certificate in your domain
-4)it is better to add "coming soon" in your experience section
-5)you also need to mention your location (Country, City)
-6)try to minimize the white space in your skills section
-7)in mobile view try to add more margins above and below your photo
-8)also add more padding to your projects section
