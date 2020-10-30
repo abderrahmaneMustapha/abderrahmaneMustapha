@@ -9,7 +9,7 @@ class Projects extends React.Component {
     };
 
     componentDidMount() {
-        fetch("https://api.jsonbin.io/b/5f89e01165b18913fc5ff104/4", {
+        fetch("https://api.jsonbin.io/b/5f89e01165b18913fc5ff104/7", {
             method: "GET",
         })
             .then((res) => res.json())
@@ -21,19 +21,22 @@ class Projects extends React.Component {
                 });
             });
     }
-    handleSearchClick = (event)=>{
-        event.preventDefault()
-        const value = document.getElementById("search").value
-        let results = []
-        this.state.data.projects.forEach(element => {
-            if(element.name.includes(value) || element.overview.includes(value)){
-                results.push(element)
+    handleSearchClick = (event) => {
+        event.preventDefault();
+        const value = document.getElementById("search").value;
+        let results = [];
+        this.state.data.projects.forEach((element) => {
+            if (
+                element.name.toLowerCase().includes(value.toLowerCase()) ||
+                element.overview.toLowerCase().includes(value.toLowerCase())
+            ) {
+                results.push(element);
             }
-        })
+        });
         this.setState({
-            search : results
-        }) 
-    }
+            search: results,
+        });
+    };
     handleGotoProject = (project) => {
         this.props.history.push({
             pathname: `/project/${project.slug}`,
@@ -54,7 +57,6 @@ class Projects extends React.Component {
                                         placeholder="Search"
                                         aria-label="Search"
                                         id="search"
-        
                                     />
                                     <button
                                         className="btn btn-outline-success my-2 my-sm-0"
@@ -70,12 +72,12 @@ class Projects extends React.Component {
                         </nav>
                     </div>
                     <div className="col-md-8">
-                        <div className="row justify-content-center">
-                            { !this.state.search ? (
+                        <div className="d-flex  flex-wrap  justify-content-center">
+                            {!this.state.search ? (
                                 <div>Nothing to search for here</div>
                             ) : (
                                 this.state.search.map((element) => (
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 mb-4">
                                         <ProjectCard
                                             key={element.id}
                                             data={element}

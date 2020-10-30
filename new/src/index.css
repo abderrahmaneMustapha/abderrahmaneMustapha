@@ -54,6 +54,9 @@ code {
   font-size: medium;
 }
 
+.container-fluid , .container-fluid div{
+  height: 100%;
+}
 
 /* widths */
 .w-80{

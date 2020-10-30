@@ -4,7 +4,7 @@
 }
 
 #project-card:hover img.img-thumbnail {
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 #project-card img.img-thumbnail{
@@ -13,7 +13,7 @@
     min-height: 100%;
     bottom: 0;
     opacity: 0.8;
-    filter: brightness(50%);
+    filter: brightness(55%);
 }
 
 #project-card .text{

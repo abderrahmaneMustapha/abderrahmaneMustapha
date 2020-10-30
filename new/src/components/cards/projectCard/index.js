@@ -15,7 +15,7 @@ export default class ProjectCard extends React.Component {
         return (
             <div
                 id="project-card"
-                className="card mb-3 bg-transparent border-0"
+                className="card mb-5 bg-transparent border-0"
                 onClick={() => {
                     this.props.onClick();
                 }}

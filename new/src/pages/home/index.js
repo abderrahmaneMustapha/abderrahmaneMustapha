@@ -9,7 +9,7 @@ class Home extends React.Component{
         super(props)
         this.state ={
             main_project_image :  {
-                 src : 'http://abderrahmane-mustapha.codes/img/learno.jpg', 
+                 src : 'https://ik.imagekit.io/ykyl2djdvw/learno_SPjc6Wg3X.JPG', 
                 alt: "learno image abderrahmane mustapha toumi potfolio"
             }
         }
