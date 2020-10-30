@@ -1,6 +1,6 @@
 import React from "react"
 
-class MainNav extends React.Component{
+export class MainNav extends React.Component{
 
     render(){
         return(
