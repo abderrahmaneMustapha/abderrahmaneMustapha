@@ -9,7 +9,7 @@ class Projects extends React.Component {
     };
 
     componentDidMount() {
-        fetch("https://api.jsonbin.io/b/5f89e01165b18913fc5ff104/7", {
+        fetch("https://api.jsonbin.io/b/5f89e01165b18913fc5ff104/10", {
             method: "GET",
         })
             .then((res) => res.json())

@@ -26,13 +26,13 @@ export default class ProjectCard extends React.Component {
                     className="img-thumbnail p-0"
                 />
 
-                <div className=" text p-1">
+                <div className="text p-1">
                     <header className="text-center font-weight-bold">
                         {data.short_name}
                     </header>
-                    <div>
+                    <div className="tags">
                         {data.tags.map((element) => (
-                            <span className="mx-1">{element}</span>
+                            <span className="mx-1 badge badge-warning">{element}</span>
                         ))}
                     </div>
                 </div>
