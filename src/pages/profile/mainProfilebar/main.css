@@ -1,6 +1,7 @@
 
 #main-profile-bar{
     min-width: 100%;
+    max-height: fit-content;
 }
 #main-profile-bar ul{
     list-style: none;

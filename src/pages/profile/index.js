@@ -10,7 +10,7 @@ class Profile extends React.Component{
 
     render(){
         return(
-            <>
+        
             <div id="profile" className="container">
             <img  id="profile-image-bg" src="https://www.flaticon.com/svg/static/icons/svg/2502/2502399.svg" alt="abderrahme profile background by tabs" />
                 <div className="row">
@@ -33,8 +33,7 @@ class Profile extends React.Component{
                     </div>
                 </div>            
             </div>
-            
-            </>
+    
         )
     }
 }
