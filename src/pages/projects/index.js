@@ -45,8 +45,8 @@ class Projects extends React.Component {
     };
     render() {
         return (
-            <div className="container-fluid">
-                <div className="row">
+            <div className="container  min-h-100">
+                <div className="row  min-h-100">
                     <div className="col-md-4">
                         <nav>
                             <header>
@@ -72,22 +72,26 @@ class Projects extends React.Component {
                         </nav>
                     </div>
                     <div className="col-md-8">
-                        <div className="d-flex  flex-wrap  justify-content-center">
-                            {!this.state.search ? (
-                                <div>Nothing to search for here</div>
-                            ) : (
-                                this.state.search.map((element) => (
-                                    <div className="col-md-4 mb-4">
-                                        <ProjectCard
-                                            key={element.id}
-                                            data={element}
-                                            onClick={() => {
-                                                this.handleGotoProject(element);
-                                            }}
-                                        />
-                                    </div>
-                                ))
-                            )}
+                        <div className="container">
+                            <div className="row  justify-content-center">
+                                {!this.state.search ? (
+                                    <div>Nothing to search for here</div>
+                                ) : (
+                                    this.state.search.map((element) => (
+                                        <div className="col-md-4 mb-4">
+                                            <ProjectCard
+                                                key={element.id}
+                                                data={element}
+                                                onClick={() => {
+                                                    this.handleGotoProject(
+                                                        element
+                                                    );
+                                                }}
+                                            />
+                                        </div>
+                                    ))
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -4,7 +4,7 @@ class Project extends React.Component {
     render() {
         const data = this.props.location.state.data;
         return (
-            <section className="container-fluid p-1" id="project-page">
+            <section className=" p-1" id="project-page">
                 <div className="row">
                     <div className="col-md-5 col-sm-12 desc-container">
                         <div className="desc-main ">

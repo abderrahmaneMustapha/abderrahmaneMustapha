@@ -34,6 +34,9 @@ code {
   min-height: 100vh;
 
 }
+
+
+
 .w-30{
   max-width: 30%;
 }
@@ -54,9 +57,9 @@ code {
   font-size: medium;
 }
 
-.container-fluid , .container-fluid div{
-  height: 100%;
-}
+
+
+
 
 /* widths */
 .w-80{
