@@ -45,8 +45,8 @@ class Projects extends React.Component {
     };
     render() {
         return (
-            <div className="container  min-h-100">
-                <div className="row  min-h-100">
+            <div className="container">
+                <div className="row">
                     <div className="col-md-4">
                         <nav>
                             <header>
@@ -72,13 +72,13 @@ class Projects extends React.Component {
                         </nav>
                     </div>
                     <div className="col-md-8">
-                        <div className="container">
-                            <div className="row  justify-content-center">
+                        <div className="container ">
+                            <div className="row justify-content-around ">
                                 {!this.state.search ? (
                                     <div>Nothing to search for here</div>
                                 ) : (
                                     this.state.search.map((element) => (
-                                        <div className="col-md-4 mb-4">
+                                        <div className="col-md-4">
                                             <ProjectCard
                                                 key={element.id}
                                                 data={element}

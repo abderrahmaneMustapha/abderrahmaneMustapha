@@ -1,6 +1,9 @@
 #project-card {
-    position: absolute;
     cursor: pointer;
+}
+
+#project-card  div.col-md-4{
+    max-height: fit-content;
 }
 
 #project-card:hover img.img-thumbnail {
