@@ -23,7 +23,7 @@ ReactDOM.render(
       <div className="col-md-10">
         <NavBar />
           <React.StrictMode>
-            <Router basename="/abderrahmaneMustapha">
+            <Router >
               <Switch>
                 <Route exact path="/">
                   <Home />
