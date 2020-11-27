@@ -46,7 +46,7 @@ class Home extends React.Component {
                             problems
                         </h5>
                     </header>
-                    <div className="col-md-7 col-sm-12">
+                    <div className="col-md-7 col-sm-12 hide-mobile">
                         <img
                             className="d-block w-100"
                             src={this.state.main_project_image.src}

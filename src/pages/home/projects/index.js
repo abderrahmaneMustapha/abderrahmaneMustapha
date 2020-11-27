@@ -33,7 +33,7 @@ class ProjectsList extends React.Component {
     render() {
         return (
             <div id="home-projects-container" className="container">
-                <div className="d-flex flex-row">
+                <div className="d-flex flex-row flex-wrap">
                     {this.state.projectsList.map((element) => (
                         <div
                             onClick={this.props.handleImageClick}

@@ -2,13 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.css";
-
+import "bootstrap"
+import "jquery"
+import "popper.js"
 import Home from "./pages/home/index";
 import Profile from "./pages/profile/index";
 import SideNav from "./components/navs/sidenav/index";
 import NavBar from "./components/navs/navbar/index";
 import Projects from "./pages/projects/index";
 import Project from "./pages/projects/project/index";
+
 import * as serviceWorker from "./serviceWorker";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
