@@ -34,6 +34,7 @@ ReactDOM.render(
                                 path="/projects"
                                 component={Projects}
                             />
+                            
                             <Route path="/project/:slug" component={Project} />
                         </Switch>
                     </Router>
