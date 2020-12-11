@@ -8,6 +8,15 @@
 #side-nav #side-nav-header{
     border-bottom: solid 0.2em #A67A39;
 }
+
+#side-nav .hide-nav{
+    display: none;
+}
+
+#side-nav .show-nav{
+    display: none;
+}
+
 #my-name{
     font-size:0.8em;
     font-weight: bold;
@@ -56,4 +65,19 @@
         padding-right: 0;       
         
     }
+
+    #side-nav .hide-nav{
+        display: block;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 100%;
+    }
+
+    .show-nav{
+        display: block;
+        position: absolute;
+        margin: 2em 0 0 1em;
+    }
+    
 }

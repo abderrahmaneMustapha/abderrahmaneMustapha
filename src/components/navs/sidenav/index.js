@@ -57,97 +57,80 @@ class SideNav extends React.Component {
         super();
 
         this.state = {
-            small_screen: window.matchMedia("(max-width:48rem)").matches,
-            hide: window.matchMedia("(max-width:48rem)").matches,
+            hide: false,
         };
     }
 
-    showSideBar = async () => {
-        await this.setState({
-            hide: false,
-            small_screen: false,
-        });
-    };
-
-    hideSideBar = () => {
+    SideBarVisibility = () => {
         this.setState({
-            hide: true,
-            small_screen: true,
+            hide: !this.state.hide,
         });
     };
 
     render() {
         return (
             <>
-                {this.state.hide && this.state.small_screen ? (
+            
                     <div
+                        className="show-nav"
                         onClick={() => {
-                            this.showSideBar();
+                            document.getElementById("side-nav").style = "";
                         }}
-                        style={{ position: "absolute" }}
                     >
-                        CLick
+                        <i class="fas fa-chevron-circle-right fa-2x"></i>
                     </div>
-                ) : (
-                    <>
-                        <aside id="side-nav">
-                            { 
-                                window.addEventListener("click", () => {
-                                  
-                                   console.log(window.matchMedia("(max-width:48rem)").matches)
-                                    this.hideSideBar();
-                                
-                                   
-                                })}
-                            <header id="side-nav-header" className="my-4">
-                                <div className="row my-3">
-                                    <div className="col-md-4 col-sm-2">
-                                        <img
-                                            className="d-block w-100 rounded-circle"
-                                            src="https://ik.imagekit.io/ykyl2djdvw/23f8c228-9596-4b80-9a13-c0f0f22a9652_JZl9Fz0tSB-v.jpg"
-                                            alt="toumi abderrahmane in his portfolio profile"
-                                        />
-                                    </div>
-                                    <div id="my-name" className="col-md-7 p-0">
-                                        Toumi Mustapha Abderrahmane
-                                    </div>
-                                </div>{" "}
-                                {/*profile pic and name here*/}
-                                <div></div> {/* statu here */}
-                            </header>
-                            <nav id="blogs-list-side-nav">
-                                <header className="mb-3">
-                                    <h6 className="h-75 mr-auto">
-                                        Articles List
-                                    </h6>
-                                </header>
-                                <ul className="list-unstyled">
-                                    {list.map((element) => (
-                                        <BlogListCard
-                                            title={element.title}
-                                            alt={element.alt}
-                                            src={element.src}
-                                            link={element.link}
-                                        />
-                                    ))}
-                                </ul>
-                            </nav>
-                            <div>
-                                <ul className="list-unstyled">
-                                    <li title="Message me" className=""></li>
-                                    <li
-                                        title="Send a feedback"
-                                        className=""
-                                    ></li>
-                                    <li
-                                        title="Download source code"
-                                        className=""
-                                    ></li>
-                                </ul>
+               
+                <aside id="side-nav">
+                    {this.state.hide === false && (
+                        <div
+                            className="hide-nav"
+                            onClick={() => {
+                                document.getElementById("side-nav").style =
+                                    "display:none";
+                            }}
+                        >
+                            <i class="fas fa-chevron-circle-left fa-2x"></i>
+                        </div>
+                    )}
+                    <header id="side-nav-header" className="my-4">
+                        <div className="row my-3">
+                            <div className="col-md-4 col-sm-2">
+                                <img
+                                    className="d-block w-100 rounded-circle"
+                                    src="https://ik.imagekit.io/ykyl2djdvw/23f8c228-9596-4b80-9a13-c0f0f22a9652_JZl9Fz0tSB-v.jpg"
+                                    alt="toumi abderrahmane in his portfolio profile"
+                                />
                             </div>
-                        </aside>
-                    </>
-                )}
+                            <div id="my-name" className="col-md-7 p-0">
+                                Toumi Mustapha Abderrahmane
+                            </div>
+                        </div>{" "}
+                        {/*profile pic and name here*/}
+                        <div></div> {/* statu here */}
+                    </header>
+                    <nav id="blogs-list-side-nav">
+                        <header className="mb-3">
+                            <h6 className="h-75 mr-auto">Articles List</h6>
+                        </header>
+                        <ul className="list-unstyled">
+                            {list.map((element) => (
+                                <BlogListCard
+                                    title={element.title}
+                                    alt={element.alt}
+                                    src={element.src}
+                                    link={element.link}
+                                />
+                            ))}
+                        </ul>
+                    </nav>
+                    <div>
+                        <ul className="list-unstyled">
+                            <li title="Message me" className=""></li>
+                            <li title="Send a feedback" className=""></li>
+                            <li title="Download source code" className=""></li>
+                        </ul>
+                    </div>
+                </aside>
             </>
         );
     }
