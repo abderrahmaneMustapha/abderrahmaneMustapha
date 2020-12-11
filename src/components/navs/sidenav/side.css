@@ -69,7 +69,7 @@
     #side-nav .hide-nav{
         display: block;
         position: absolute;
-        top: 50%;
+        top: 30%;
         bottom: 50%;
         left: 100%;
     }
