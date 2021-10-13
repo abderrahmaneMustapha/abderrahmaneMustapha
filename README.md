@@ -28,7 +28,7 @@ class AboutMe(DetailView):
     frameworks = ['django 🔫 ', 'react 🎯', 'bootstrap✨ ', 'django-rest-framework🧬 ']
     return frameworks
    
-  #get the databases that i can use
+  #get all my favourite databases 
   def get_databases(self)
    data_bases = ['postgres🐘 ', 'mysql 👍', 'mongodb 🍃']
    return data_bases
