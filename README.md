@@ -20,12 +20,12 @@ class AboutMe(DetailView):
   
   #get all my favourite  programming languages
   def get_fav_lang(self):
-      languages = ['python 🐍 ', 'javascript😺 ', 'java ☕']
+      languages = ['python 🐍 ', 'javascript😺 ', 'Typesc']
       return languages
       
   #get all my favourite frameworks
   def get_fav_frameworks(self):
-    frameworks = ['django 🔫 ', 'react 🎯', 'bootstrap✨ ', 'django-rest-framework🧬 ']
+    frameworks = ['django 🔫 ', 'react 🎯', 'bootstrap✨ ', 'django-rest-framework🧬', 'vuejs', 'angular', 'expressjs', 'nodejs']
     return frameworks
    
   #get all my favourite databases 
